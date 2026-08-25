@@ -1,6 +1,5 @@
-import "./App.css";
 import React, { useRef, useState } from "react";
-
+import "./App.css";
 function App() {
   const [name, setName] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
@@ -13,7 +12,7 @@ function App() {
   return (
     <div className="title">
       {loggedIn ? (
-        <h1>Welcome {name}</h1>
+        <h1>Welcome Student {name}</h1>
       ) : (
         <>
           <input
@@ -27,7 +26,7 @@ function App() {
         </>
       )}
     </div>
-    
+   
   );
 }
 
